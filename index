@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>श्री भैरव नाथ प्रॉपर्टी डीलर | भीलवाड़ा</title>
+
+  <meta
+    name="description"
+    content="भीलवाड़ा में मकान, प्लॉट और प्रॉपर्टी खरीदने-बेचने के लिए श्री भैरव नाथ प्रॉपर्टी डीलर से संपर्क करें।"
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+    /* =========================
+       Basic Reset
+    ========================== */
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Noto Sans Devanagari", sans-serif;
+      color: #101b31;
+      background: #ffffff;
+      line-height: 1.6;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    input,
+    select,
+    textarea {
+      font: inherit;
+    }
+
+    :root {
+      --navy: #071c3f;
+      --navy-light: #10376d;
+      --gold: #d99a10;
+      --gold-light: #ffd968;
+      --cream: #fff9eb;
+      --white: #ffffff;
+      --text: #101b31;
+      --muted: #667085;
+      --border: #ead7a0;
+      --shadow: 0 20px 55px rgba(7, 28, 63, 0.14);
+    }
+
+    .container {
+      width: min(1160px, calc(100% - 32px));
+      margin: auto;
+    }
+
+    .section {
+      padding: 90px 0;
+    }
+
+    .section-heading {
+      max-width: 750px;
+      margin: 0 auto 45px;
+      text-align: center;
+    }
+
+    .section-tag {
+      display: inline-block;
+      margin-bottom: 8px;
+      color: var(--gold);
+      font-weight: 800;
+    }
+
+    .section-heading h2 {
+      color: var(--navy);
+      font-size: clamp(30px, 5vw, 48px);
+      line-height: 1.2;
+    }
+
+    .section-heading p {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    /* =========================
+       Header
+    ========================== */
+
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.96);
+      border-bottom: 1px solid rgba(217, 154, 16, 0.25);
+      backdrop-filter: blur(12px);
+    }
+
+    .navbar {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--navy);
+    }
+
+    .logo-icon {
+      width: 52px;
+      height: 52px;
+      display: grid;
+      place-items: center;
+      border-radius: 15px;
+      background: linear-gradient(135deg, var(--gold-light), var(--gold));
+      color: var(--navy);
+      font-size: 31px;
+      box-shadow: 0 8px 20px rgba(217, 154, 16, 0.3);
+    }
+
+    .logo-text strong,
+    .logo-text span {
+      display: block;
+      line-height: 1.2;
+    }
+
+    .logo-text strong {
+      font-size: 18px;
+      font-weight: 900;
+    }
+
+    .logo-text span {
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--navy);
+      font-weight: 700;
+      transition: 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--gold);
+    }
+
+    .nav-links .nav-button {
+      padding: 10px 20px;
+      border-radius: 30px;
+      color: var(--white);
+      background: var(--navy);
+    }
+
+    .menu-button {
+      display: none;
+      border: none;
+      background: transparent;
+      color: var(--navy);
+      font-size: 30px;
+      cursor: pointer;
+    }
+
+    /* =========================
+       Hero Section
+    ========================== */
+
+    .hero {
+      min-height: 680px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+
+      background:
+        linear-gradient(
+          90deg,
+          rgba(7, 28, 63, 0.98) 0%,
+          rgba(7, 28, 63, 0.88) 42%,
+          rgba(7, 28, 63, 0.25) 75%
+        ),
+        url("property-banner.jpg") center / cover no-repeat;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(
+          circle at 20% 30%,
+          rgba(255, 217, 104, 0.15),
+          transparent 35%
+        );
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 90px 0;
+      color: var(--white);
+    }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--gold-light);
+      font-weight: 800;
+    }
+
+    .hero-tag::before {
+      content: "";
+      width: 35px;
+      height: 2px;
+      background: var(--gold-light);
+    }
+
+    .hero h1 {
+      max-width: 770px;
+      margin-top: 18px;
+      font-size: clamp(45px, 7vw, 82px);
+      line-height: 1.08;
+      font-weight: 900;
+      letter-spacing: -2px;
+    }
+
+    .hero h1 span {
+      color: var(--gold-light);
+    }
+
+    .hero-description {
+      max-width: 680px;
+      margin-top: 24px;
+      color: rgba(255, 255, 255, 0.82);
+      font-size: 19px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 35px;
+    }
+
+    .button {
+      min-height: 52px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 25px;
+      border: none;
+      border-radius: 12px;
+      font-weight: 900;
+      cursor: pointer;
+      transition: 0.25s;
+    }
+
+    .button:hover {
+      transform: translateY(-3px);
+    }
+
+    .button-primary {
+      color: var(--navy);
+      background: linear-gradient(135deg, var(--gold-light), var(--gold));
+      box-shadow: 0 12px 30px rgba(217, 154, 16, 0.3);
+    }
+
+    .button-outline {
+      color: var(--white);
+      border: 1px solid rgba(255, 255, 255, 0.45);
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(130px, 190px));
+      gap: 15px;
+      margin-top: 55px;
+    }
+
+    .hero-stat {
+      padding-right: 18px;
+      border-right: 1px solid rgba(255, 255, 255, 0.22);
+    }
+
+    .hero-stat:last-child {
+      border-right: none;
+    }
+
+    .hero-stat strong {
+      display: block;
+      color: var(--gold-light);
+      font-size: 21px;
+    }
+
+    .hero-stat span {
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 13px;
+    }
+
+    /* =========================
+       Services
+    ========================== */
+
+    .services {
+      background: var(--cream);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .service-card {
+      padding: 30px;
+      border: 1px solid rgba(217, 154, 16, 0.25);
+      border-radius: 22px;
+      background: var(--white);
+      box-shadow: 0 12px 35px rgba(7, 28, 63, 0.06);
+      transition: 0.25s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-7px);
+      box-shadow: var(--shadow);
+    }
+
+    .service-icon {
+      width: 62px;
+      height: 62px;
+      display: grid;
+      place-items: center;
+      border-radius: 18px;
+      color: var(--gold-light);
+      background: var(--navy);
+      font-size: 29px;
+    }
+
+    .service-card h3 {
+      margin-top: 20px;
+      color: var(--navy);
+      font-size: 21px;
+    }
+
+    .service-card p {
+      margin-top: 9px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    /* =========================
+       About
+    ========================== */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 65px;
+    }
+
+    .about-image {
+      position: relative;
+    }
+
+    .about-image::before {
+      content: "";
+      position: absolute;
+      inset: -15px 22px 22px -15px;
+      z-index: -1;
+      border: 2px solid var(--gold);
+      border-radius: 28px;
+    }
+
+    .about-image img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      border-radius: 25px;
+      box-shadow: var(--shadow);
+    }
+
+    .about-content h2 {
+      margin-top: 10px;
+      color: var(--navy);
+      font-size: clamp(32px, 5vw, 48px);
+      line-height: 1.2;
+    }
+
+    .about-content > p {
+      margin-top: 17px;
+      color: var(--muted);
+    }
+
+    .feature-list {
+      display: grid;
+      gap: 13px;
+      margin-top: 25px;
+      list-style: none;
+    }
+
+    .feature-list li {
+      position: relative;
+      padding-left: 36px;
+      color: var(--text);
+      font-weight: 700;
+    }
+
+    .feature-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 25px;
+      height: 25px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      color: var(--navy);
+      background: var(--gold-light);
+      font-size: 13px;
+    }
+
+    /* =========================
+       CTA
+    ========================== */
+
+    .cta {
+      padding: 60px 0;
+      background:
+        linear-gradient(
+          135deg,
+          rgba(217, 154, 16, 0.98),
+          rgba(255, 217, 104, 0.95)
+        );
+    }
+
+    .cta-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .cta-box h2 {
+      color: var(--navy);
+      font-size: clamp(28px, 4vw, 43px);
+      line-height: 1.2;
+    }
+
+    .cta-box p {
+      margin-top: 8px;
+      color: rgba(7, 28, 63, 0.78);
+      font-weight: 600;
+    }
+
+    .cta .button {
+      flex-shrink: 0;
+      color: var(--white);
+      background: var(--navy);
+    }
+
+    /* =========================
+       Contact
+    ========================== */
+
+    .contact {
+      background: var(--navy);
+      color: var(--white);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      align-items: start;
+      gap: 60px;
+    }
+
+    .contact-info h2 {
+      margin-top: 10px;
+      font-size: clamp(32px, 5vw, 48px);
+      line-height: 1.2;
+    }
+
+    .contact-info > p {
+      margin-top: 16px;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .contact-details {
+      margin-top: 30px;
+      padding: 25px;
+      border: 1px solid rgba(255, 217, 104, 0.3);
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    .contact-item + .contact-item {
+      margin-top: 20px;
+    }
+
+    .contact-item strong {
+      display: block;
+      color: var(--gold-light);
+      font-size: 17px;
+    }
+
+    .contact-item a {
+      color: var(--white);
+      font-weight: 700;
+    }
+
+    .contact-form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      padding: 32px;
+      border-radius: 25px;
+      color: var(--text);
+      background: var(--white);
+      box-shadow: 0 25px 70px rgba(0, 0, 0, 0.25);
+    }
+
+    .form-group {
+      display: grid;
+      gap: 7px;
+    }
+
+    .form-group.full {
+      grid-column: 1 / -1;
+    }
+
+    .form-group label {
+      color: var(--navy);
+      font-weight: 800;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 13px 14px;
+      border: 1px solid #d9deea;
+      border-radius: 10px;
+      outline: none;
+      background: #ffffff;
+      transition: 0.2s;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--gold);
+      box-shadow: 0 0 0 3px rgba(217, 154, 16, 0.12);
+    }
+
+    .contact-form button {
+      grid-column: 1 / -1;
+      width: 100%;
+    }
+
+    .form-message {
+      grid-column: 1 / -1;
+      color: var(--muted);
+      text-align: center;
+      font-size: 13px;
+    }
+
+    /* =========================
+       Footer
+    ========================== */
+
+    .footer {
+      padding: 24px 0;
+      color: rgba(255, 255, 255, 0.7);
+      background: #04142e;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      font-size: 14px;
+    }
+
+    /* =========================
+       Floating Buttons
+    ========================== */
+
+    .floating-buttons {
+      position: fixed;
+      right: 18px;
+      bottom: 20px;
+      z-index: 999;
+      display: grid;
+      gap: 12px;
+    }
+
+    .floating-button {
+      width: 54px;
+      height: 54px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      color: var(--white);
+      font-size: 23px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    }
+
+    .call-button {
+      background: var(--navy-light);
+    }
+
+    .whatsapp-button {
+      background: #1cab55;
+    }
+
+    /* =========================
+       Responsive
+    ========================== */
+
+    @media (max-width: 950px) {
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .about-image {
+        max-width: 700px;
+      }
+
+      .cta-box {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .menu-button {
+        display: block;
+      }
+
+      .nav-links {
+        position: absolute;
+        top: 76px;
+        left: 16px;
+        right: 16px;
+        display: none;
+        padding: 22px;
+        border-radius: 15px;
+        align-items: stretch;
+        flex-direction: column;
+        gap: 15px;
+        background: var(--white);
+        box-shadow: var(--shadow);
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .nav-links .nav-button {
+        text-align: center;
+      }
+
+      .hero {
+        min-height: 620px;
+        background-position: 62% center;
+      }
+
+      .hero h1 {
+        letter-spacing: -1px;
+      }
+
+      .hero-stats {
+        grid-template-columns: 1fr;
+        max-width: 280px;
+      }
+
+      .hero-stat {
+        padding-bottom: 12px;
+        border-right: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      .hero-stat:last-child {
+        border-bottom: 0;
+      }
+
+      .section {
+        padding: 70px 0;
+      }
+
+      .contact-form {
+        grid-template-columns: 1fr;
+        padding: 24px;
+      }
+
+      .form-group.full,
+      .contact-form button,
+      .form-message {
+        grid-column: auto;
+      }
+
+      .footer-content {
+        text-align: center;
+        flex-direction: column;
+        gap: 5px;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .logo-text strong {
+        font-size: 15px;
+      }
+
+      .logo-icon {
+        width: 45px;
+        height: 45px;
+      }
+
+      .hero {
+        min-height: 660px;
+      }
+
+      .hero-content {
+        padding: 70px 0;
+      }
+
+      .hero-description {
+        font-size: 16px;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+      }
+
+      .hero-buttons .button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container navbar">
+
+      <a href="#home" class="logo">
+        <div class="logo-icon">⌂</div>
+
+        <div class="logo-text">
+          <strong>श्री भैरव नाथ</strong>
+          <span>प्रॉपर्टी डीलर</span>
+        </div>
+      </a>
+
+      <button
+        class="menu-button"
+        id="menuButton"
+        aria-label="मेन्यू खोलें"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">होम</a></li>
+        <li><a href="#services">सेवाएँ</a></li>
+        <li><a href="#about">हमारे बारे में</a></li>
+        <li><a href="#contact" class="nav-button">संपर्क करें</a></li>
+      </ul>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="container hero-content">
+
+        <div class="hero-tag">
+          भीलवाड़ा की भरोसेमंद प्रॉपर्टी सेवा
+        </div>
+
+        <h1>
+          सपनों की प्रॉपर्टी,
+          <br>
+          <span>भरोसे के साथ</span>
+        </h1>
+
+        <p class="hero-description">
+          आधुनिक घर, आवासीय प्लॉट और बेहतर निवेश के लिए अनुभवी
+          प्रॉपर्टी सलाह। आपकी जरूरत, बजट और पसंदीदा लोकेशन के
+          अनुसार सही विकल्प खोजने में हम आपकी सहायता करते हैं।
+        </p>
+
+        <div class="hero-buttons">
+          <a href="tel:+919783990705" class="button button-primary">
+            ☎ अभी कॉल करें
+          </a>
+
+          <a href="#contact" class="button button-outline">
+            प्रॉपर्टी पूछताछ
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <strong>10+ वर्ष</strong>
+            <span>प्रॉपर्टी का अनुभव</span>
+          </div>
+
+          <div class="hero-stat">
+            <strong>100%</strong>
+            <span>पारदर्शी सलाह</span>
+          </div>
+
+          <div class="hero-stat">
+            <strong>भीलवाड़ा</strong>
+            <span>स्थानीय विशेषज्ञता</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Services -->
+    <section class="section services" id="services">
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="section-tag">हमारी सेवाएँ</span>
+
+          <h2>आपकी हर प्रॉपर्टी जरूरत का समाधान</h2>
+
+          <p>
+            मकान, प्लॉट, खरीद, बिक्री और निवेश से संबंधित सेवाएँ
+            एक ही स्थान पर।
+          </p>
+        </div>
+
+        <div class="services-grid">
+
+          <article class="service-card">
+            <div class="service-icon">🏠</div>
+            <h3>आधुनिक लक्जरी घर</h3>
+            <p>
+              परिवार और निवेश के लिए चुनिंदा रेडी-टू-मूव तथा
+              प्रीमियम घर।
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">📍</div>
+            <h3>आवासीय प्लॉट</h3>
+            <p>
+              अच्छी लोकेशन, बेहतर कनेक्टिविटी और भविष्य की ग्रोथ
+              वाले प्लॉट।
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">🤝</div>
+            <h3>प्रॉपर्टी सलाह</h3>
+            <p>
+              बजट, डॉक्यूमेंट और लोकेशन के आधार पर अनुभवी और
+              निष्पक्ष मार्गदर्शन।
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">📈</div>
+            <h3>निवेश सहायता</h3>
+            <p>
+              भविष्य के रिटर्न को ध्यान में रखकर सही प्रॉपर्टी
+              चुनने में सहायता।
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container about-grid">
+
+        <div class="about-image">
+          <img
+            src="property-banner.jpg"
+            alt="भीलवाड़ा में आधुनिक लक्जरी घर"
+          >
+        </div>
+
+        <div class="about-content">
+          <span class="section-tag">हम पर भरोसा क्यों?</span>
+
+          <h2>
+            स्थानीय जानकारी और पारदर्शी प्रॉपर्टी सेवा
+          </h2>
+
+          <p>
+            हम भीलवाड़ा और आसपास के क्षेत्रों में मकान तथा प्लॉट की
+            खरीद-बिक्री के लिए ग्राहकों को सरल, भरोसेमंद और
+            व्यक्तिगत सेवा प्रदान करते हैं।
+          </p>
+
+          <ul class="feature-list">
+            <li>प्राइम लोकेशन में चुनिंदा प्रॉपर्टी</li>
+            <li>आपके बजट के अनुसार बेहतर विकल्प</li>
+            <li>साइट विजिट और बातचीत में सहायता</li>
+            <li>खरीदने और बेचने दोनों के लिए सहयोग</li>
+            <li>स्थानीय मार्केट की बेहतर जानकारी</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="container cta-box">
+
+        <div>
+          <h2>मकान या प्लॉट खरीदना-बेचना है?</h2>
+
+          <p>
+            आज ही संपर्क करें और अपनी आवश्यकता के अनुसार सही
+            प्रॉपर्टी विकल्प प्राप्त करें।
+          </p>
+        </div>
+
+        <a href="tel:+919783990705" class="button">
+          कॉल करें: 97839 90705
+        </a>
+
+      </div>
+    </section>
+
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+      <div class="container contact-grid">
+
+        <div class="contact-info">
+          <span class="section-tag">संपर्क करें</span>
+
+          <h2>अपनी प्रॉपर्टी की जरूरत हमें बताएं</h2>
+
+          <p>
+            फॉर्म भरें या दिए गए नंबर पर सीधे कॉल करें। हमारी टीम
+            जल्द आपसे संपर्क करेगी।
+          </p>
+
+          <div class="contact-details">
+
+            <div class="contact-item">
+              <strong>भैरव लाल शर्मा</strong>
+              <a href="tel:+919783990705">97839 90705</a>,
+              <a href="tel:+919829319993">98293 19993</a>
+            </div>
+
+            <div class="contact-item">
+              <strong>किशन लाल शर्मा</strong>
+              <a href="tel:+919829640246">98296 40246</a>
+            </div>
+
+            <div class="contact-item">
+              <strong>पता</strong>
+              बी ब्लॉक, शॉप नं. 2, ओम नगर,<br>
+              हल्देड़ रोड, भीलवाड़ा
+            </div>
+
+          </div>
+        </div>
+
+
+        <form class="contact-form" id="contactForm">
+
+          <div class="form-group">
+            <label for="name">आपका नाम</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="अपना नाम लिखें"
+              required
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="phone">मोबाइल नंबर</label>
+            <input
+              type="tel"
+              id="phone"
+              placeholder="10 अंकों का नंबर"
+              pattern="[0-9]{10}"
+              maxlength="10"
+              required
+            >
+          </div>
+
+          <div class="form-group full">
+            <label for="requirement">आपकी आवश्यकता</label>
+
+            <select id="requirement" required>
+              <option value="">एक विकल्प चुनें</option>
+              <option value="मकान खरीदना है">मकान खरीदना है</option>
+              <option value="प्लॉट खरीदना है">प्लॉट खरीदना है</option>
+              <option value="प्रॉपर्टी बेचना है">प्रॉपर्टी बेचना है</option>
+              <option value="निवेश सलाह चाहिए">निवेश सलाह चाहिए</option>
+            </select>
+          </div>
+
+          <div class="form-group full">
+            <label for="message">संदेश</label>
+            <textarea
+              id="message"
+              rows="4"
+              placeholder="बजट, लोकेशन या अन्य जानकारी लिखें"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="button button-primary">
+            WhatsApp पर पूछताछ भेजें
+          </button>
+
+          <p class="form-message">
+            फॉर्म सबमिट करने पर WhatsApp खुलेगा।
+          </p>
+
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+
+      <p>
+        © <span id="year"></span> श्री भैरव नाथ प्रॉपर्टी डीलर
+      </p>
+
+      <p>
+        मकान व प्लॉट खरीदने-बेचने के लिए संपर्क करें।
+      </p>
+
+    </div>
+  </footer>
+
+
+  <!-- Floating Buttons -->
+  <div class="floating-buttons">
+
+    <a
+      href="https://wa.me/919783990705"
+      target="_blank"
+      class="floating-button whatsapp-button"
+      aria-label="WhatsApp करें"
+    >
+      ✆
+    </a>
+
+    <a
+      href="tel:+919783990705"
+      class="floating-button call-button"
+      aria-label="कॉल करें"
+    >
+      ☎
+    </a>
+
+  </div>
+
+
+  <script>
+    // Mobile navigation
+    const menuButton = document.getElementById("menuButton");
+    const navLinks = document.getElementById("navLinks");
+
+    menuButton.addEventListener("click", function () {
+      navLinks.classList.toggle("active");
+
+      const isOpen = navLinks.classList.contains("active");
+      menuButton.setAttribute("aria-expanded", isOpen);
+
+      menuButton.textContent = isOpen ? "✕" : "☰";
+    });
+
+    // Menu close after clicking a link
+    document.querySelectorAll(".nav-links a").forEach(function (link) {
+      link.addEventListener("click", function () {
+        navLinks.classList.remove("active");
+        menuButton.textContent = "☰";
+        menuButton.setAttribute("aria-expanded", "false");
+      });
+    });
+
+    // Current year
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+    // WhatsApp enquiry form
+    const contactForm = document.getElementById("contactForm");
+
+    contactForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const name = document.getElementById("name").value.trim();
+      const phone = document.getElementById("phone").value.trim();
+      const requirement =
+        document.getElementById("requirement").value;
+      const message =
+        document.getElementById("message").value.trim();
+
+      const whatsappMessage =
+        "नमस्ते, मुझे प्रॉपर्टी से संबंधित जानकारी चाहिए।" +
+        "\n\nनाम: " + name +
+        "\nमोबाइल नंबर: " + phone +
+        "\nआवश्यकता: " + requirement +
+        "\nसंदेश: " + (message || "कोई अतिरिक्त संदेश नहीं");
+
+      const whatsappNumber = "919783990705";
+
+      const whatsappURL =
+        "https://wa.me/" +
+        whatsappNumber +
+        "?text=" +
+        encodeURIComponent(whatsappMessage);
+
+      window.open(whatsappURL, "_blank");
+    });
+  </script>
+
+</body>
+</html>
