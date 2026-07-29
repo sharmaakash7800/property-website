@@ -273,25 +273,30 @@
       align-items: center;
       overflow: hidden;
       background:
-        linear-gradient(
-          90deg,
-          rgba(7, 28, 63, 0.98) 0%,
-          rgba(7, 28, 63, 0.90) 44%,
-          rgba(7, 28, 63, 0.30) 76%
-        ),
-        url("property-banner.jpg") center / cover no-repeat;
+        radial-gradient(circle at 85% 20%, rgba(255, 217, 104, 0.48), transparent 32%),
+        linear-gradient(125deg, #fffaf0 0%, #f4f7fc 55%, #e9f0fb 100%);
+    }
+
+    body.dark .hero {
+      background:
+        radial-gradient(circle at 82% 18%, rgba(217, 154, 16, 0.24), transparent 30%),
+        linear-gradient(125deg, #071c3f 0%, #102b54 58%, #17243a 100%);
     }
 
     .hero::after {
       content: "";
       position: absolute;
       inset: 0;
+      pointer-events: none;
       background:
-        radial-gradient(
-          circle at 18% 28%,
-          rgba(255, 217, 104, 0.16),
-          transparent 35%
-        );
+        linear-gradient(90deg, rgba(217, 154, 16, 0.08) 1px, transparent 1px),
+        linear-gradient(rgba(217, 154, 16, 0.08) 1px, transparent 1px);
+      background-size: 48px 48px;
+      mask-image: linear-gradient(to right, rgba(0,0,0,0.42), transparent 75%);
+    }
+
+    body.dark .hero::after {
+      opacity: 0.22;
     }
 
     .hero-content {
@@ -333,8 +338,68 @@
     .hero-description {
       max-width: 670px;
       margin-top: 24px;
-      color: rgba(255, 255, 255, 0.82);
+      color: #526078;
       font-size: 18px;
+    }
+
+    .hero-content {
+      color: #071c3f;
+    }
+
+    .hero-tag,
+    .hero h1 span,
+    .hero-stat strong {
+      color: #b77900;
+    }
+
+    .hero-tag::before {
+      background: #b77900;
+    }
+
+    .hero-stat {
+      border-right-color: rgba(7, 28, 63, 0.18);
+    }
+
+    .hero-stat span {
+      color: #667085;
+    }
+
+    .hero .button-outline {
+      color: #071c3f;
+      border-color: rgba(7, 28, 63, 0.28);
+      background: rgba(255, 255, 255, 0.72);
+    }
+
+    body.dark .hero-content {
+      color: #ffffff;
+    }
+
+    body.dark .hero-description {
+      color: rgba(255, 255, 255, 0.82);
+    }
+
+    body.dark .hero-tag,
+    body.dark .hero h1 span,
+    body.dark .hero-stat strong {
+      color: var(--gold-light);
+    }
+
+    body.dark .hero-tag::before {
+      background: var(--gold-light);
+    }
+
+    body.dark .hero-stat {
+      border-right-color: rgba(255, 255, 255, 0.22);
+    }
+
+    body.dark .hero-stat span {
+      color: rgba(255, 255, 255, 0.72);
+    }
+
+    body.dark .hero .button-outline {
+      color: #ffffff;
+      border-color: rgba(255, 255, 255, 0.45);
+      background: rgba(255, 255, 255, 0.08);
     }
 
     .hero-buttons {
@@ -748,7 +813,7 @@
           <li><a href="#about">About Us</a></li>
           <li>
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSfXI_II-qqfPshWeJwCtYshghSan5YAijvf1RkjZM5rL1xZrQ/viewform?usp=sharing&ouid=109146852056270324227"
+              href="#contact"
               target="_blank"
               rel="noopener noreferrer"
               class="nav-cta"
@@ -806,7 +871,7 @@
           </a>
 
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfXI_II-qqfPshWeJwCtYshghSan5YAijvf1RkjZM5rL1xZrQ/viewform?usp=sharing&ouid=109146852056270324227"
+            href="#contact"
             target="_blank"
             rel="noopener noreferrer"
             class="button button-outline"
@@ -817,7 +882,7 @@
 
         <div class="hero-stats">
           <div class="hero-stat">
-            <strong>10+ Years</strong>
+            <strong>26 Years</strong>
             <span>Property experience</span>
           </div>
 
@@ -919,7 +984,7 @@
         </div>
 
         <a
-          href="https://docs.google.com/forms/d/e/1FAIpQLSfXI_II-qqfPshWeJwCtYshghSan5YAijvf1RkjZM5rL1xZrQ/viewform?usp=sharing&ouid=109146852056270324227"
+          href="#contact"
           target="_blank"
           rel="noopener noreferrer"
           class="button"
